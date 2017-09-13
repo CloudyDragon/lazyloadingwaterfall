@@ -1,4 +1,4 @@
 
 window.onload=function(){
-	aleart("adsdd");
+	alert("adsdd");
 }

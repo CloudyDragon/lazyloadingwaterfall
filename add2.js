@@ -1,4 +1,2 @@
+alert("adsdd");
 
-window.onload=function(){
-	alert("adsdd");
-}

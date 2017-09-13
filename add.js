@@ -51,7 +51,7 @@ window.onload=function(){
 						imgDiv.className="box_img";
 						ccontent.appendChild(imgDiv);
 				var img=document.createElement('img');
-						img.src="images/"+imgData.data[i].src;
+						img.src="./images/"+imgData.data[i].src;
 						imgDiv.appendChild(img);
 
 			}

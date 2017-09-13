@@ -47,9 +47,12 @@ window.onload=function(){
 				var imgDiv=document.createElement('div');
 						imgDiv.className="box_img";
 						ccontent.appendChild(imgDiv);
+				var a=document.createElement('a');
+						a.href="images/"+imgData.data[i].src;
+						imgDiv.appendChild(a);
 				var img=document.createElement('img');
 						img.src="images/"+imgData.data[i].src;
-						imgDiv.appendChild(img);
+						a.appendChild(img);
 
 			}
 			imgLocation("container","box");

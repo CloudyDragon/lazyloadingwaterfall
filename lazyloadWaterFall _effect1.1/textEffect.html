@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 实现灯光照射显示文字动画</title>
+      <style type="text/css">
+		body {background: #000;}
+
+.content {position: relative;width: 235px;margin: 0 auto;}
+
+p {margin: 0;padding: 0;font-size: 90px; }
+
+.klam {
+  position: absolute;
+  top: 40px;
+  left: 10px; 
+  color: #000;
+  z-index: 1;
+  animation: shadow 5.0s ease-in-out infinite;
+}
+
+.noor {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 140px;
+    height: 140px; 
+    opacity: 0.8;
+    border-radius: 100px;
+    z-index: 0;
+    background: 
+      -webkit-radial-gradient(center, ellipse cover, #fff 0%, rgba(255, 255, 255, 0.2) 100%); 
+     box-shadow: 0px 0px 50px #fff;
+    animation: noor 5.0s ease-in-out infinite;
+}
+
+.two {z-index: 2;opacity: 0.8;}
+
+@-webkit-keyframes noor {
+    0% {left: 0px;}
+    60%{left:80px;}
+    100% {left:0px;}
+}
+
+@-webkit-keyframes shadow {
+  0% {text-shadow: -9px 1px 4px #000;}
+  50% {text-shadow: 9px 1px 4px #000; }
+  100% {text-shadow: -9px 1px 4px #000;}    
+}
+ 
+      </style>
+</head>
+
+<body>
+  <div class="content">
+  <div class="klam">
+    <p>弱音</p>
+  </div>
+  <div class="noor one"></div>
+  <div class="noor two"></div>
+</div>
+  
+  
+</body>
+</html>

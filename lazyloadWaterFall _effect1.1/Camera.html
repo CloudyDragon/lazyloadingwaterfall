@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+  <title>CSS3模仿相机快门特效 </title>
+      <link rel="stylesheet" href="css/Camera.css">
+</head>
+
+<body>
+<div class="shutter">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+    <script type="text/javascript">
+    	const shutter = document.querySelector('.shutter');
+document.addEventListener("click",function(){
+			shutter.classList.toggle('open');
+});
+    </script>
+</body>
+</html>
